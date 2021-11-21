@@ -8,3 +8,5 @@
 <li><p>The bot collects data from yahoo-finance by using the 'yfinance' library.</p></li>
 <li><p>The downloaded data gets plotted in form of the line graph.</p></li>
 <li><p>Stock analysis is made easier with the plotted graph.</p></li>
+<h4>Image:</h4>
+![](image/cap.JPG)
