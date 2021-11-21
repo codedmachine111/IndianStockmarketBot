@@ -1,19 +1,20 @@
 from bsedata.bse import BSE
 import yfinance as yf
 import matplotlib.pyplot as pyl
+from config import codes, start_date
 
 #creating a BSE instance
 b=BSE()
 
 #getting scrip codes of stocks
-codes=[]
-scrip_codes=raw_input('Enter the SCRIP code(s) of the stock(s) seperated with commas : ')
-codes.append(scrip_codes[:-1])
-print(codes)
+sc_codes=codes
+print(sc_codes)
 
+#start date
+strt_dt=start_date
 #getting the securityID of the stock
 names=[]
-for i in codes:
+for i in sc_codes:
     names.append(b.getQuote(i)['securityID'])
 
 # Converting in the format of 'securityID.NS' for yahoo-finance to give accurate data
@@ -22,7 +23,7 @@ for j in names:
     data.append(j+'.NS')
 
 #downloading the data from yahoo-finance from startdate to enddate
-frame = yf.download(data,start = "2020-01-01" , end = "2021-01-01")
+frame = yf.download(data,start = strt_dt)
 
 #to filter the data to get only the prices
 closes=frame['Adj Close']
