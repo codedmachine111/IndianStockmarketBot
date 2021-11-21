@@ -1,6 +1,6 @@
 # IndianStockmarketBot
 <h3>A bot to collect the data of Indian stocks.</h3>
-<h4>How to:</h4>
+<h4>How to run the bot:</h4>
 <li><p>Enter all the SCRIP codes and start-date inside the config.py file.</p></li>
 <li><p>Run the main.py file</p></li>
 <h4>Features:</h4>
