@@ -6,12 +6,13 @@ from config import codes, start_date
 #creating a BSE instance
 b=BSE()
 
-#getting scrip codes of stocks
+#getting scrip codes of stocks from config.py
 sc_codes=codes
 print(sc_codes)
 
-#start date
+#getting start date from config.py
 strt_dt=start_date
+
 #getting the securityID of the stock
 names=[]
 for i in sc_codes:
