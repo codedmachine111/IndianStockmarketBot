@@ -1,3 +1,4 @@
+#importing required libraries
 from bsedata.bse import BSE
 import yfinance as yf
 import matplotlib.pyplot as pyl
