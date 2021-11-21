@@ -9,4 +9,4 @@
 <li><p>The downloaded data gets plotted in form of the line graph.</p></li>
 <li><p>Stock analysis is made easier with the plotted graph.</p></li>
 <h4>Image:</h4>
-![](image/cap.JPG)
+<img src='image/cap.JPG'></img>
