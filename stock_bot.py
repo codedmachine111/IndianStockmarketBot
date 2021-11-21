@@ -5,10 +5,11 @@ import matplotlib.pyplot as pyl
 #creating a BSE instance
 b=BSE()
 
-#scrip codes of stocks
-codes=[
-'500180','500209','532540','500247','507685','500325','500112','532281',
-]
+#getting scrip codes of stocks
+codes=[]
+scrip_codes=raw_input('Enter the SCRIP code(s) of the stock(s) seperated with commas : ')
+codes.append(scrip_codes[:-1])
+print(codes)
 
 #getting the securityID of the stock
 names=[]
